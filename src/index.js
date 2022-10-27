@@ -6,6 +6,7 @@ import Login from './indexLogin'
 import Notas from './Components/Notas';
 import FormBiblioteca from './Components/FormBiblioteca.js';
 import FormNota from './Components/FormNota';
+import FormEditBiblioteca from './Components/FormEditBiblioteca';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,8 @@ root.render(
         <Route path='/Notas' element={<Notas />}>
         </Route>
         <Route path='/addNewBiblioteca' element={<FormBiblioteca />}>
+        </Route>
+        <Route path='/editBiblioteca' element={<FormEditBiblioteca />}>
         </Route>
         <Route path='/addNewNota' element={<FormNota />}>
         </Route>

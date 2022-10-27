@@ -13,8 +13,8 @@ const initialNotes = [
     index:'0',
     image:'image-1',
     alt:'...',
-    title:'Tqm jijiji',
-    content:'La verdad es que no tqm, o bueno sí pero no tanto :('
+    title:'Universidad',
+    content:'Cosas que debo hacer este semestre en la universidad'
   },
   {
     index:'1',
@@ -77,7 +77,7 @@ function Notas() {
           <div {...droppableProvided.droppableProps} ref={droppableProvided.innerRef} class="row row-cols-1 row-cols-md-5">
             {notas.map((notas, index) => (<Nota 
               index={index}
-              noteId={notas.index}
+              noteId={index.toString()}
               image={notas.image}
               alt={notas.alt}
               title={notas.title}
